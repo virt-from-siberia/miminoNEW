@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.min.scss.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <script src="js/all.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal ">
+        <div class="modal-content">
+            <h4>Заполните все поля</h4>
+            <p>помеченные *</p>
+        </div>
+        <div class="modal-footer green accent-4">
+            <button class="modal-close waves-effect waves-green btn-flat grey lighten-5">Закрыть</button>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal ">
+        <div class="modal-content">
+            <h4>Ваша заявка принята</h4>
+            <p>в ближайшее время с вами свяжется наш менеджер</p>
+        </div>
+        <div class="modal-footer green accent-4">
+            <button class="modal-close waves-effect waves-green btn-flat grey lighten-5">Закрыть</button>
+        </div>
+    </div>
+
+
+    <div class="navbar-fixed">
+        <div class="cart-container">
+            <a class="btn-floating  waves-effect waves-light  cart_mobbile ">
+                <i class="material-icons green accent-4">add_shopping_cart</i>
+            </a>
+            <p class="cart_mobile_sum">08789</p>
+        </div>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html"><img src="img/logoNEXT.png" alt="На главную"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="border-left" href="menu_delivery.html"><i class=" material-icons ">view_comfy</i>
+                            <p>Меню доставки</p>
+                        </a></li>
+                    <li><a href="reserve.html"><i class="material-icons">restaurant</i>
+                            <p>Забронировать стол</p>
+                        </a></li>
+                    <li><a href="index.html#delivery_link"><i class="material-icons">local_shipping</i>
+                            <p>О доставке</p>
+                        </a></li>
+                    <li><a href="index.html#smartphone_link"><i class="material-icons">get_app</i>
+                            <p>Скачать приложение</p>
+                        </a></li>
+                    <li>
+                        <a href="cart.html" class="cart">
+                            <i class="material-icons">add_shopping_cart</i>
+                            <p class="cart-common-sum">0</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav sidenav_menu" id="mobile-demo">
+        <img src="img/logoNEXT.png" alt="">
+        <ul class="">
+            <li><a class="border-left" href="menu_cold.html"><img src="img/icons/COLD-ICON.png" alt="">
+                    <p>Холодные закуски</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_hot.html"><img src="img/icons/HOT.png" alt="">
+                    <p>Горячие закуски</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_hot_mail.html"><img src="img/icons/hot-meal.png" alt="">
+                    <p>Горячие блюда</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_mangal.html"><img src="img/icons/mangal.png" alt="">
+                    <p>Блюда на мангале</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_garnire.html"><img src="img/icons/garnir.png" alt="">
+                    <p>Гарниры</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_friends.html"><img src="img/icons/company.png" alt="">
+                    <p>Блюда для компаний</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_souses.html"><img src="img/icons/souse.png" alt="">
+                    <p>Соусы</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_hatchapuri.html"><img src="img/icons/hatchepuri.png" alt="">
+                    <p>Хачапури и пироги</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_desert.html"><img src="img/icons/desert.png" alt="">
+                    <p>Десерты</p>
+                </a>
+            </li>
+            <li><a class="border-left" href="menu_hinkali.html"><img src="img/icons/henkali.png" alt="">
+                    <p>Хинкали</p>
+                </a>
+            </li>
+
+            <li class="slidebar_cart"><a class="border-left" href="cart.html"><i
+                        class="large material-icons">add_shopping_cart</i>
+                    <p>Корзина</p>
+                </a>
+            </li>
+        </ul>
+        <div class="contacts">
+            <div class="footer_contant-block">
+                <i class=" material-icons ">phone_in_talk</i>
+                <p class="about_contact-phone"> 33-33-33</p>
+            </div>
+            <div class="footer_contant-block">
+                <i class="material-icons">location_on</i>
+                <p class="about_contact-adr"> Бабушкина 64а</p>
+            </div>
+        </div>
+    </ul>
+
+    <section class="menu_navigation">
+        <div class="menu_navigation_container">
+            <ul class="menu_navigation_list">
+                <div class="owl-carousel owl-theme owel-menu">
+                    <div class="item">
+                        <a href="menu_cold.html">
+                            <li class="menu_navigation_item"><img src="img/icons/COLD-ICON.png" alt="">
+                                <p>Холодные закуски</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_hot.html">
+                            <li class="menu_navigation_item"><img src="img/icons/HOT.png" alt="">
+                                <p>Горячие закуски</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_hot_mail.html">
+                            <li class="menu_navigation_item"><img src="img/icons/hot-meal.png" alt="">
+                                <p>Горячие блюда</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_mangal.html">
+                            <li class="menu_navigation_item"><img src="img/icons/mangal.png" alt="">
+                                <p>Блюда на мангале</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_garnire.html">
+                            <li class="menu_navigation_item"><img src="img/icons/garnir.png" alt="">
+                                <p>Гарниры</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_friends.html">
+                            <li class="menu_navigation_item"><img src="img/icons/company.png" alt="">
+                                <p>Блюда для компаний</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_souses.html">
+                            <li class="menu_navigation_item"><img src="img/icons/souse.png" alt="">
+                                <p>Соусы</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_hatchapuri.html">
+                            <li class="menu_navigation_item"><img src="img/icons/hatchepuri.png" alt="">
+                                <p>Хачапури и пироги</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_desert.html">
+                            <li class="menu_navigation_item"><img src="img/icons/desert.png" alt="">
+                                <p>Десерты</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="menu_hinkali.html">
+                            <li class="menu_navigation_item"><img src="img/icons/henkali.png" alt="">
+                                <p>Хинкали</p>
+                            </li>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="reserve">
+        <div class="container">
+            <h2 CLASS="reserve_header">Резерв столика</h2>
+            <p class="reserve_text"> Уважаемые гости, вы можете зарезервировать столик на подходящее для вас время </p>
+
+            <div class="row">
+                <div class="input-field">
+                    <form>
+                        <div class="input-field col l6 s12">
+                            <i class="material-icons prefix ot">account_circle</i>
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Ваше имя *</label>
+                        </div>
+                        <div class="input-field col l6 s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="telephone" type="tel" class="validate">
+                            <label for="telephone">Ваш телефон *</label>
+                        </div>
+
+                        <div class="input-field col l6 s12">
+                            <i class="material-icons prefix">date_range</i>
+                            <input id="data" type="text" class="validate datepicker">
+                            <label class="active" for="data">Выберете дату *</label>
+                        </div>
+                        <div class="input-field col l6 s12">
+                            <i class="material-icons prefix">access_time</i>
+                            <input id="time" type="text" class="validate timepicker">
+                            <label class="active" for="time">Выберете время *</label>
+                        </div>
+                        <div class="input-field col l6 s12">
+                            <i class="material-icons prefix ot">face</i>
+                            <input id="persons" type="text" class="validate">
+                            <label for="persons">Количество гостей *</label>
+                        </div>
+                        <div class="input-field col l6 s12">
+                            <i class="material-icons prefix ot">message</i>
+                            <input id="likes" type="text" class="validate">
+                            <label for="likes">Пожелание к брони</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col l12 s12 center-align reserve_button">
+                    <a class="waves-effect waves-light btn btn-large green accent-4" id="submit"><i
+                            class="material-icons right">assignment_turned_in</i>Отправить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer_icon">
+                <img class="" src="img/logo_2.png" alt="">
+                <div class="block_social-icons">
+                    <a href="https://ru-ru.facebook.com/Mimino.Chita" class="facebook"><i
+                            class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mimino_chita/" class="twitter"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://vk.com/mimino_chita" class="tumblr"><i class="fa fa-vk"></i></a>
+                </div>
+                <div class="footer_contant-block">
+                    <i class=" material-icons ">phone_in_talk</i>
+                    <p class="about_contact-phone"> 33-33-33</p>
+                </div>
+                <div class="footer_contant-block">
+                    <i class="material-icons">location_on</i>
+                    <p class="about_contact-adr"> Бабушкина 64а</p>
+                </div>
+            </div>
+            <p class="developer center-align">Разработка сайта: alonso85@mail.ru</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        });
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
+    </script>
+    <script src="external_library/materialize.js"></script>
+    <script src="external_library/reserve.js"> </script>
+</body>
+
+</html>

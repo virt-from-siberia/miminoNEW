@@ -1,0 +1,217 @@
+.about {
+    font-family: 'Roboto', sans-serif !important;
+    // background: url('../img/bg_4.jpg');
+    background: $secondWhite;
+    background-image: url('../img/mimino-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: 105% !important;
+    background-position-y: 80% !important;
+    background-size: 56% 55%;
+    background-position-y: 100%;
+    padding: 50px 0;
+    position: relative;
+
+    .about_contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .material-icons {
+            display: block;
+            font-size: 3.3rem;
+            color: $orange;
+        }
+
+        .about_contact-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .about_contact-phone {
+            font-size: 24px;
+            display: block;
+            margin-right: 50px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .about_contact-adr {
+            font-size: 24px;
+            display: block;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+    }
+
+    .about_header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 40px;
+        font-weight: bold;
+        color: $textBlack;
+        letter-spacing: 1px;
+        line-height: 1.6em;
+        margin: 0;
+
+        span {
+            font-size: 80px;
+            color: $gold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+
+        }
+    }
+
+    .logo_about {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .about_header_bottom {
+        font-weight: normal;
+        margin-top: 50px;
+    }
+
+    .scroll_down {
+        width: 200px;
+        display: block;
+        box-sizing: border-box;
+        margin: 50px auto;
+        margin-bottom: 10px;
+    }
+
+
+
+    .about_text {
+
+        font-size: 25px;
+        letter-spacing: 1px;
+        line-height: 1.2em;
+        color: $textBlack;
+        padding: 15px;
+        margin-top: 50px;
+        font-weight: bold;
+
+        span {
+            color: $gold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+        }
+    }
+
+    .owl-theme {
+        margin-top: 60px;
+
+    }
+
+
+
+    .video {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .about_text_bottom {
+
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 1.2em;
+        color: $textBlack;
+        padding: 15px;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+}
+
+
+@media(max-width:1200px) {
+    .about_text {
+        font-size: 20px !important;
+    }
+
+    .about_text_bottom {
+        font-size: 20px !important;
+    }
+}
+
+@media(max-width: 500px) {
+    .about {
+
+        background-image: url('../img/mimino-bg.png');
+        background-repeat: no-repeat;
+        background-position-x: 105% !important;
+        background-position-y: 65% !important;
+        background-size: 110% 30%;
+        background-position-y: 100%;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    .about_contact {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        .about_contact-phone {
+            font-size: 18px;
+            margin-right: 50px;
+            margin-left: 15px;
+        }
+
+        .about_contact-adr {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .about_contact-container {
+            margin: 0px 0;
+            padding: 0;
+        }
+    }
+
+    .about_header {
+        font-size: 2rem !important;
+
+        span {
+            font-size: 3rem !important;
+
+        }
+    }
+
+    .about_text {
+        font-size: 20px !important;
+    }
+
+    .about_text_bottom {
+        font-size: 20px !important;
+    }
+}
+
+@media(max-width: 420px) {
+
+
+    .about_header {
+        padding-top: 20px !important;
+        padding-bottom: 10px !important;
+
+        span {
+            font-size: 6rem;
+            color: $gold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+
+        }
+    }
+
+    .logo_about {
+        display: block;
+        width: 250px !important;
+        margin: 0 auto;
+    }
+
+    .about_text {
+        font-size: 20px !important;
+    }
+
+    .about_text_bottom {
+        font-size: 20px !important;
+    }
+}

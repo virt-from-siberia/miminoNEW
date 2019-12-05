@@ -1,0 +1,173 @@
+.sidenav {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    // background-image: url('../img/bg_slide.jpg');
+
+    img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+
+    }
+
+    ul {
+        li {
+            a {
+                img {
+                    width: 50px;
+                }
+
+                i {
+                    font-size: 34px !important;
+                    color: $orange !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                    font-weight: bold;
+                }
+            }
+
+            &:hover {
+                background: $orange;
+
+                i {
+
+                    color: white !important;
+                }
+
+                p {
+
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    .contacts {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center;
+        align-content: center;
+
+        .footer_contant-block {
+            display: flex;
+            justify-content: center;
+
+
+
+
+            .material-icons {
+                margin-right: 10px;
+                margin-top: 15px;
+                color: $orange;
+            }
+
+            .about_contact-phone {
+                font-size: 15px !important;
+                font-weight: bold;
+            }
+
+            .about_contact-adr {
+                font-size: 15px !important;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.sidenav_menu {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    // background-image: url('../img/bg_slide.jpg');
+
+    img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+
+    }
+
+    ul {
+        li {
+            a {
+                margin: 10px 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    margin: 0;
+                    padding: 0;
+                    margin-right: 10px;
+                }
+
+
+                p {
+                    font-size: 16px !important;
+                    font-weight: bold;
+                }
+            }
+
+            &:hover {
+                background: $orange;
+
+                i {
+
+                    color: white !important;
+                }
+
+                p {
+
+                    color: white;
+                }
+            }
+
+        }
+
+        .slidebar_cart {
+            background: yellow !important;
+
+            &:hover {
+                background: $orange !important;
+            }
+        }
+    }
+
+    .contacts {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center;
+        align-content: center;
+
+        .footer_contant-block {
+            display: flex;
+            justify-content: center;
+
+
+
+
+            .material-icons {
+                margin-right: 10px;
+                margin-top: 15px;
+                color: $orange;
+            }
+
+            .about_contact-phone {
+                font-size: 15px !important;
+                font-weight: bold;
+            }
+
+            .about_contact-adr {
+                font-size: 15px !important;
+                font-weight: bold;
+            }
+        }
+    }
+}

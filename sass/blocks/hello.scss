@@ -1,0 +1,32 @@
+.hello {
+    font-family: 'Roboto', sans-serif !important;
+    background: $grey;
+    border-block: 1px solid rgba(204, 204, 204, 0.794);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    background: url('../img/bg_4.jpg');
+
+    .about_header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 3rem;
+        color: $textBlack;
+        letter-spacing: 2px;
+        line-height: 2em;
+        margin: 0;
+
+        span {
+            font-size: 6rem;
+            color: $gold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+
+        }
+    }
+
+    .scroll {
+        width: 200px;
+        display: block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,118 @@
+.section-wrap {
+    font-family: 'Roboto', sans-serif !important;
+    padding: 0;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.219);
+    height: 70vh;
+
+    .big_logo {
+        width: 500px;
+        position: absolute !important;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+    }
+
+
+
+    .flexslider {
+        position: relative;
+        overflow: hidden;
+        height: 70vh;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../img/intro/new2.jpg') center no-repeat;
+            background-size: cover;
+            // opacity: 0.7;
+            animation: transform 15s infinite;
+        }
+    }
+
+    .block_social-icons {
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+
+
+        .fa {
+            font-size: 3rem;
+            margin: 0 20px;
+            color: $secondWhite;
+            opacity: 0.7 !important;
+            transition: 0.7s;
+
+            &:hover {
+                opacity: 1 !important;
+
+            }
+        }
+    }
+}
+
+@keyframes transform {
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media(max-width: 500px) {
+
+    .section-wrap {
+
+        height: 100vh;
+
+        .flexslider {
+            height: 100vh;
+
+            &::after {
+
+                background: url('../img/intro/mobile.jpg') center no-repeat !important;
+                background-size: cover !important;
+                animation: transform 15s infinite;
+            }
+        }
+
+        .block_social-icons {
+
+            .fa {
+                font-size: 3rem;
+                margin: 0 15px;
+                color: $secondWhite;
+                opacity: 0.7 !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .big_logo {
+        width: 300px !important;
+    }
+
+    .section-wrap {
+
+
+
+        .flexslider {}
+
+        .block_social-icons {
+
+            .fa {
+                font-size: 3rem;
+                margin: 0 10px;
+            }
+        }
+    }
+}

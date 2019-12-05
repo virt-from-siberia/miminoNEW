@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+// @import "smart-grid";
+@import "variables";
+//materialize
+@import "materialize/materialize";
+// @import "fonts";
+@import "mixins";
+@import "core";
+
+//EXTERNAL
+@import "external/owl.carousel";
+@import "external/owl.theme.default";
+
+
+
+// BLOCKS
+@import "blocks/main";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/hello";
+@import "blocks/work";
+@import "blocks/delivery";
+@import "blocks/smartphone";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/sidebar";
+@import "blocks/about_menu";
+
+
+//CART
+@import "blocks/cart/cart";
+@import "blocks/cart/cart-page";
+
+// MENU
+@import "blocks/menu/menu_header";
+@import "blocks/menu/menu_navigation";
+@import "blocks/menu/menu_body";
+@import "blocks/menu/card";
+@import "blocks/menu/menu_delivery";
+
+//RESERVE
+@import "blocks/reserve/reserve";

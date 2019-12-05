@@ -1,0 +1,145 @@
+.smartphone {
+
+    font-family: 'Roboto', sans-serif !important;
+    background-color: $secondWhite !important;
+    background: url('../img/bg777.png'), url('../img/bg888.png'), url('../img/bg888.png'), url('../img/bg888.png');
+    background-repeat: no-repeat;
+    background-position: center right, center left, bottom, top;
+    overflow: hidden;
+
+    .smartphone_header {
+        margin-top: 150px;
+        font-size: 50px;
+        font-weight: bold;
+        color: $secondWhite;
+        text-align: center;
+        margin-bottom: 100px;
+        padding: 25px;
+        background: #009688;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+        border-radius: 5px;
+        clip-path: polygon(5% 10%, 100% 0, 89% 100%, 0% 90%);
+        padding: 4% 8% 6% 8%;
+    }
+
+    .smartphone_img {
+        width: 600px;
+        position: relative;
+        bottom: -80px;
+    }
+
+    .smartphone-right {
+        background: rgba(254, 89, 18, 0.842);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+        border-radius: 5px;
+        clip-path: polygon(0% 0%, 90% 0, 100% 100%, 10% 95%);
+
+        .smartphone-text {
+            margin-top: 15px;
+            text-align: center;
+            padding: 10px 25px;
+            font-size: 30px;
+            letter-spacing: 0.3px;
+            line-height: 1;
+            color: $secondWhite;
+        }
+
+        .smartphone-link {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+
+            .fa {
+                font-size: 60px;
+                cursor: pointer;
+                transition: 0.7s;
+                color: $secondWhite;
+                opacity: 0.7;
+            }
+
+            .fa-android {
+                &:hover {
+                    color: rgb(68, 128, 0);
+                }
+            }
+
+            .fa-apple {
+                &:hover {
+                    color: grey
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .smartphone {
+
+        .smartphone_header {
+            font-size: 3rem;
+
+            .smartphone_img {
+
+
+                .smartphone-right {
+
+                    .smartphone-text {
+                        font-size: 2.5rem;
+                    }
+
+                    .smartphone-link {
+
+                        .fa {
+                            font-size: 7rem;
+                        }
+
+                        .fa-android {}
+
+                        .fa-apple {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .smartphone {
+
+        .smartphone_header {
+            line-height: 1em;
+
+
+            .smartphone_img {
+
+                .smartphone-right {
+
+                    .smartphone-text {}
+
+                    .smartphone-link {
+
+                        .fa {}
+
+                        .fa-android {}
+
+                        .fa-apple {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 500px) {
+
+    .smartphone-text {
+        font-size: 2rem !important;
+
+    }
+
+    .smartphone_img {
+        width: 450px !important;
+        left: -80px !important;
+    }
+}

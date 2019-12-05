@@ -1,0 +1,118 @@
+.menu_body {
+  .card {
+    min-height: 230px;
+
+    .card-content {
+      height: 230px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-content: center;
+
+      .card-title {
+        display: block;
+        padding: 15px;
+        font-size: 20px;
+        line-height: 1;
+        background: rgba(37, 168, 44, 0.85);
+        text-align: center;
+        color: $secondWhite !important;
+        clip-path: polygon(5% 10%, 100% 0, 89% 100%, 0% 90%);
+        padding: 4% 8% 6% 8%;
+      }
+
+      .card-descr {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 30px;
+
+        .card-info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .card-info-wight {
+            width: 25px;
+          }
+        }
+
+        .card-price {
+          font-size: 25px;
+          display: block;
+          background: rgb(255, 49, 49);
+          color: $secondWhite;
+          border-radius: 25px;
+          padding: 0 15px;
+        }
+      }
+
+      .card-buttons {
+        width: 100%;
+        bottom: 0;
+        margin-top: auto !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 25px;
+        margin-bottom: 15px;
+
+        .card-counter {
+          color: black;
+          font-size: 25px !important;
+          border-radius: 15px;
+          padding: 0 20px;
+        }
+        .oranged {
+          background: orange;
+          color: white;
+        }
+      }
+    }
+
+    .card-reveal {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.8);
+
+      .card-title {
+        background: rgb(255, 255, 0);
+        clip-path: polygon(5% 10%, 100% 0, 89% 100%, 0% 90%);
+        padding: 4% 8% 6% 8%;
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 50px;
+        margin-top: 25px;
+      }
+
+      .card-reveal-about {
+        background: rgba(0, 0, 0, 0.561);
+        clip-path: polygon(5% 1%, 90% 10%, 100% 100%, 0% 90%);
+        padding: 4% 8% 6% 8%;
+        font-size: 15px;
+        line-height: 1.2;
+        color: $secondWhite;
+      }
+    }
+  }
+}
+
+.menu_delivery {
+  .card {
+    .card-action {
+      background: $secondWhite;
+      display: flex !important;
+
+      a {
+        display: block;
+        color: $textBlack !important;
+        font-size: 14px;
+      }
+
+      i {
+        display: block;
+        color: rgb(3, 163, 3);
+      }
+    }
+  }
+}

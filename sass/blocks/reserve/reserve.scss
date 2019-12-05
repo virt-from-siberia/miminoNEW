@@ -1,0 +1,42 @@
+.modal {
+    opacity: 0.9 !important;
+}
+
+
+.reserve {
+    background: $secondWhite;
+    font-family: 'Roboto', sans-serif !important;
+    margin-top: 65px !important;
+    padding-bottom: 150px;
+
+    .reserve_header {
+        // margin-top: 50px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .reserve_text {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .input-field {
+        i {
+            // color: $orange;
+        }
+    }
+
+    .reserve_button {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 500px) {
+    .reserve {
+        margin-top: 50px !important;
+
+        .reserve_button {
+            margin-top: 50px;
+        }
+    }
+}

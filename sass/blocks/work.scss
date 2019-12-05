@@ -1,0 +1,84 @@
+.work {
+    font-family: 'Roboto', sans-serif !important;
+    background: $secondWhite;
+
+    .work_block {
+        margin-top: 50px;
+
+        .work_list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .work_block_item {
+                display: flex;
+                justify-content: center;
+                flex-basis: 150px;
+                padding: 12px;
+                border: 1px solid $orange;
+                border-radius: 25px;
+                margin: 10px 0;
+                transition: 0.7s;
+
+                &:hover {
+                    background: $orange;
+                    cursor: pointer;
+
+                    a {
+                        color: $secondWhite;
+                        transition: 0.7s;
+                    }
+                }
+
+                a {
+                    font-weight: bold;
+                    color: $textBlack;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 420px) {
+
+    .work {
+
+        .work_block {
+            margin-top: 0px;
+
+            .work_list {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                .work_block_item {
+                    display: flex;
+                    justify-content: center;
+                    flex-basis: 120px;
+                    padding: 5px;
+                    border: 1px solid $orange;
+                    border-radius: 25px;
+                    margin: 5px 0;
+                    transition: 0.7s;
+
+                    &:hover {
+                        background: $orange;
+                        cursor: pointer;
+
+                        a {
+                            color: $secondWhite;
+                            transition: 0.7s;
+                        }
+                    }
+
+                    a {
+                        font-weight: bold;
+                        color: $textBlack;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
