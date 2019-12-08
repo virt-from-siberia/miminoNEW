@@ -15,8 +15,19 @@ function out(data) {
     data = JSON.parse(data);
     console.log(data);
     let out = '';
+    let countLoad = 0;
+
+
+    console.log(countLoad);
 
     for (var key in data) {
+        if (cart[key] != undefined) {
+            countLoad = cart[key];
+        } else {
+            countLoad = 0;
+        }
+
+
         out += ``;
         out += ` <div class="col l3 m6 s12 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">`;
         out += `<div class="card hoverable">`;
@@ -38,7 +49,7 @@ function out(data) {
         out += ` <a class="minus-cart btn-floating btn-medium waves-effect waves-light red" data-id="${key}">`;
         out += ` <i class="material-icons">highlight_off</i>`;
         out += `</a>`;
-        out += `<div class="card-counter">${cart[key] }</div>`;
+        out += `<div class="card-counter">${countLoad}</div>`;
         out += `<a class="add-to-cart btn-floating btn-medium waves-effect light-green darken-1" data-id="${key}">`;
         out += `<i class="material-icons">add</i>`;
         out += `</a>`;
@@ -60,7 +71,6 @@ function out(data) {
 }
 
 function addToCart() {
-
     var id = $(this).attr('data-id');
     if (cart[id] == undefined) {
         cart[id] = 1;
@@ -80,7 +90,9 @@ function addToCart() {
 }
 
 function minusCart() {
+
     var id = $(this).attr('data-id');
+
     if (cart[id] == undefined || cart[id] == 0 || cart[id] == null) {
         delete cart[id];
     } else {
@@ -92,18 +104,21 @@ function minusCart() {
         });
     }
     var counterElement = this.parentNode.querySelector('.card-counter');
-    // this.parentNode.querySelector('.card-counter').innerHTML = cart[id];
-    if (cart[id] >= 0) {
-        showConuter(counterElement, id);
-    } else {
-        cart[id] = 0;
+    if (cart[id] == 0) {
+        delete cart[id];
+        showConuter(counterElement, 0);
     }
+    showConuter(counterElement, id);
 
     showMiniCart();
     saveCart();
 }
 
 function showConuter(counterElement, id) {
+    if (cart[id] == undefined) {
+        counterElement.innerHTML = '0';
+        return;
+    }
     counterElement.innerHTML = cart[id];
 }
 

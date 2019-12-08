@@ -1,25 +1,25 @@
 var cart = {};
-console.log(111);
+// console.log(111);
 
 function loadCart() {
-    console.log(localStorage.getItem('cart'));
+    // console.log(localStorage.getItem('cart'));
     if (localStorage.getItem('cart')) {
         cart = JSON.parse(localStorage.getItem('cart'));
-        console.log(cart);
+        // console.log(cart);
         showMiniCart();
     }
 }
 
 
 function showMiniCart() {
-    console.log('show');
+    // console.log('show');
     $.post(
         "core/core.php", {
             "action": "showMiniCart"
         },
         function (dataMinCart) {
             dataMinCart = JSON.parse(dataMinCart);
-            console.log(dataMinCart);
+            // console.log(dataMinCart);
             var goodsMinCart = dataMinCart;
             var commonSummmMinCart = 0;
             var out = '';

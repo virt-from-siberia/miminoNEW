@@ -10,4 +10,7 @@ switch ($action) {
     case 'showMiniCart':
         showMiniCart();
         break;
+    case 'showCart':
+        showCart();
+        break;
 }

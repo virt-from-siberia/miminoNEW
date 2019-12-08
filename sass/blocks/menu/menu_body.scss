@@ -1,45 +1,62 @@
 .menu_body {
-    padding-top: 100px;
-    background: rgb(240, 240, 240);
+  padding-top: 100px;
+  //   background: rgb(240, 240, 240);
+  background: url("../img/burlap24.jpg") !important;
+  background-size: 400px !important;
+  background-attachment: fixed !important;
 
-    .menu_body-header {
-        text-align: center;
-        margin-bottom: 35px;
-        position: relative;
-
-
-        h2 {
-            background-color: rgb(255, 94, 0);
-            clip-path: polygon(25.45% 16.15%, 75.55% 23.65%, 79.4% 83.35%, 31.65% 82.25%);
-            padding: 6% 10% 8% 15%;
-            color: white;
-            background-image: url('../img/bg777.png'), url('../img/bg888.png');
-            background-repeat: no-repeat;
-            background-position: top, bottom;
-        }
-
-        .card-panel {
-            background-color: rgba(255, 255, 255, 0.555) !important;
-            padding: 10px;
-            text-align: center !important;
-
-            span {
-                font-size: 30px !important;
-                text-align: center !important;
-                color: $textBlack !important;
-                text-transform: uppercase;
-
-            }
-        }
+  .pagination {
+    .btn {
+      margin: 5px 0 !important;
     }
+  }
+
+  .menu_body-header {
+    text-align: center;
+    margin-bottom: 35px;
+    position: relative;
+
+    h2 {
+      background-color: rgb(255, 94, 0);
+      clip-path: polygon(
+        25.45% 16.15%,
+        75.55% 23.65%,
+        79.4% 83.35%,
+        31.65% 82.25%
+      );
+      padding: 7% 12% 10% 18%;
+      color: white;
+      background-image: url("../img/bg777.png"), url("../img/bg888.png");
+      background-repeat: no-repeat;
+      background-position: top, bottom;
+    }
+
+    .card-panel {
+      background-color: rgba(255, 255, 255, 0.555) !important;
+      padding: 10px;
+      text-align: center !important;
+
+      span {
+        font-size: 30px !important;
+        text-align: center !important;
+        color: $textBlack !important;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .bottom {
+    padding: 50px 0;
+    margin: 0;
+  }
 }
 
 .col.l3.s12 {
-    padding: 5px !important;
+  padding: 5px !important;
 }
 
-@media(max-width:500px) {
-    h2 {
-        clip-path: polygon(5% 10%, 100% 0, 89% 100%, 0% 90%)!important;
-    }
+@media (max-width: 500px) {
+  h2 {
+    clip-path: polygon(5% 10%, 100% 0, 89% 100%, 0% 90%) !important;
+  }
 }

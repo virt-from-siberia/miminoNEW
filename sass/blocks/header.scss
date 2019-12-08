@@ -1,82 +1,78 @@
 nav .sidenav-trigger i {
-    color: $textBlack !important;
+  color: $textBlack !important;
 }
 
 .nav-wrapper {
-    background: rgba(255, 255, 255, 0.897) !important;
+  background: rgba(255, 255, 255, 0.897) !important;
 
-    img {
-        width: 60px;
-        margin-top: 13px !important;
-        margin-left: 100px;
-    }
+  img {
+    width: 60px;
+    margin-top: 13px !important;
+    margin-left: 100px;
+  }
 
+  li {
+    display: block;
+    position: relative;
+    overflow: hidden;
 
-    li {
+    a {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      top: -25px;
+      max-height: 64px;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+
+      &:hover {
+        background: $orange;
+
+        i {
+          color: white;
+        }
+
+        p {
+          color: white;
+        }
+      }
+
+      i {
         display: block;
-        position: relative;
-        overflow: hidden;
+        margin-right: 5px;
+        font-size: 30px;
+        color: $textBlack;
+        transition: 0.3s;
+      }
 
-        a {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            top: -25px;
-            max-height: 64px;
-            border-right: 1px solid rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-
-            &:hover {
-                background: $orange;
-
-                i {
-
-                    color: white;
-                }
-
-                P {
-                    color: white;
-
-                }
-            }
-
-            i {
-                display: block;
-                margin-right: 5px;
-                font-size: 30px;
-                color: $textBlack;
-                transition: 0.3s;
-            }
-
-            P {
-                display: block;
-                color: $textBlack;
-                transition: 0.3s;
-            }
-        }
-
-        .border-left {
-            border-left: 1px solid rgba(0, 0, 0, 0.2);
-        }
+      p {
+        display: block;
+        color: $textBlack;
+        transition: 0.3s;
+      }
     }
+
+    .border-left {
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 
-
-@media(max-width:990px) {
-    .nav-wrapper {
-        img {
-            margin: 0;
-            margin-top: 13px !important;
-        }
+@media (max-width: 990px) {
+  .nav-wrapper {
+    img {
+      margin: 0;
+      margin-top: 13px !important;
     }
+  }
 }
 
-@media(max-width:500px) {
-    .nav-wrapper {
-        img {
-            width: 50px;
-            margin-top: 13px !important;
-        }
+@media (max-width: 500px) {
+  .nav-wrapper {
+    img {
+      width: 50px;
+      margin-top: 13px !important;
     }
+  }
 }

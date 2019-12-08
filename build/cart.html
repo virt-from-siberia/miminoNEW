@@ -22,6 +22,12 @@
 </head>
 
 <body>
+    <div id="modal1" class="modal valign center-block valign ">
+        <div class="modal-content">
+            <h4 class="center-align">Ваша корзина пуста</h4>
+            <h4 class="center-align">сделайте покупку</h4>
+        </div>
+    </div>
 
     <div class="navbar-fixed">
         <div class="cart-container">
@@ -212,88 +218,96 @@
     </section>
 
     <section class="cart_page">
-        <h2 class="cart_page_header truncate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-            Ваши покупки
-        </h2>
         <div class="container">
+            <ul class="pagination">
+                <a class="waves-effect waves-light btn  amber darken-4" href="menu_delivery.html"><i
+                        class="material-icons right">arrow_forward</i>Меню</a>
+                <a class="waves-effect waves-light btn light-blue darken-1"><i
+                        class="material-icons right">details</i>Корзина</a>
+            </ul>
+            <h2 class="cart_page_header truncate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                Ваши покупки
+            </h2>
+
             <div class="row">
+                <div class="generate-content">
 
 
-                <div class="col s12 m4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/items/10.jpg">
-                        </div>
-                        <div class="card-content">
-                            <div class="card_header">Чаывапва</div>
-                            <hr>
-
-
-                            <div class="card_quantity">
-                                <i class="material-icons">poll</i>
-                                <p class="card_quantity_text">Количество</p>
-                                <p class="card_quantity_sum">3</p>
+                    <!-- <div class="col s12 m4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/items/10.jpg">
                             </div>
+                            <div class="card-content">
+                                <div class="card_header">Чаывапва</div>
+                                <hr>
 
+                                <div class="card_quantity">
+                                    <i class="material-icons">poll</i>
+                                    <p class="card_quantity_text">Количество</p>
+                                    <p class="card_quantity_sum">3</p>
+                                </div>
 
-
-                            <div class="card_sum">1206 руб</div>
-                            <div class="buttons_block">
-                                <button class="yellow darken-1 minus_button card_button waves-effect waves-light btn">
-                                    <i class="material-icons left">indeterminate_check_box</i>
-                                </button>
-                                <button class="red darken-4 delite_button card_button waves-effect waves-light btn">
-                                    <i class="material-icons left">cancel</i>
-                                </button>
-                                <button class="plus_button card_button waves-effect waves-light btn">
-                                    <i class="material-icons left">add_box</i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col s12 m4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/items/10.jpg">
-                        </div>
-                        <div class="card-content">
-                            <div class="card_header">Чаывапва</div>
-                            <hr>
-
-
-                            <div class="card_quantity">
-                                <i class="material-icons">poll</i>
-                                <p class="card_quantity_text">Количество</p>
-                                <p class="card_quantity_sum">3</p>
-                            </div>
-
-
-
-                            <div class="card_sum">1206 руб</div>
-                            <div class="buttons_block">
-                                <button class="yellow darken-1 minus_button card_button waves-effect waves-light btn">
-                                    <i class="material-icons left">indeterminate_check_box</i>
-                                </button>
-                                <button class="red darken-4 delite_button card_button waves-effect waves-light btn">
-                                    <i class="material-icons left">cancel</i>
-                                </button>
-                                <button class="plus_button card_button waves-effect waves-light btn">
-                                    <i class="material-icons left">add_box</i>
-                                </button>
+                                <div class="card_sum">1206 руб</div>
+                                <div class="buttons_block">
+                                    <button
+                                        class="yellow darken-1 minus_button card_button waves-effect waves-light btn">
+                                        <i class="material-icons left">indeterminate_check_box</i>
+                                    </button>
+                                    <button class="red darken-4 delite_button card_button waves-effect waves-light btn">
+                                        <i class="material-icons left">cancel</i>
+                                    </button>
+                                    <button class="plus_button card_button waves-effect waves-light btn">
+                                        <i class="material-icons left">add_box</i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+
+                    <div class="col s12 m4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                        <div class="card hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/items/10.jpg">
+                            </div>
+                            <div class="card-content">
+                                <div class="card_header">Чаывапва</div>
+                                <hr>
+
+
+                                <div class="card_quantity">
+                                    <i class="material-icons">poll</i>
+                                    <p class="card_quantity_text">Количество</p>
+                                    <p class="card_quantity_sum">3</p>
+                                </div>
+
+
+
+                                <div class="card_sum">1206 руб</div>
+                                <div class="buttons_block">
+                                    <button
+                                        class="yellow darken-1 minus_button card_button waves-effect waves-light btn">
+                                        <i class="material-icons left">indeterminate_check_box</i>
+                                    </button>
+                                    <button class="red darken-4 delite_button card_button waves-effect waves-light btn">
+                                        <i class="material-icons left">cancel</i>
+                                    </button>
+                                    <button class="plus_button card_button waves-effect waves-light btn">
+                                        <i class="material-icons left">add_box</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
             </div>
-
 
         </div>
         <div class="cart_page_order_sum">
-            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Сумма заказа : 5432 </h2>
+            <h2 class="show-common-sum" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Сумма заказа :
+                5432 </h2>
         </div>
     </section>
 
@@ -327,13 +341,13 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="emailqweqw" type="email" class="validate">
+                                <input id="email" type="email" class="validate">
                                 <label for="email">Телефон для связи *</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="emailww" type="email" class="validate">
+                                <input id="email" type="email" class="validate">
                                 <label for="emФЫВail">Адрес доставки *</label>
                             </div>
                         </div>
