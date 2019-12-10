@@ -22,10 +22,29 @@
 </head>
 
 <body>
+
+
+
     <div id="modal1" class="modal valign center-block valign ">
         <div class="modal-content">
             <h4 class="center-align">Ваша корзина пуста</h4>
             <h4 class="center-align">сделайте покупку</h4>
+        </div>
+    </div>
+    <div id="modal2" class="modal valign center-block valign ">
+        <div class="modal-content">
+            <h4 class="center-align">Заполните имя, и телефон для связи</h4>
+        </div>
+    </div>
+    <div id="modal3" class="modal valign center-block valign ">
+        <div class="modal-content">
+            <h4 class="center-align">Спасибо. Заявка принята.</h4>
+            <h4 class="center-align">В ближайшее время с Вами свяжется наш менеджер.</h4>
+        </div>
+    </div>
+    <div id="modal4" class="modal valign center-block valign ">
+        <div class="modal-content">
+            <h4 class="center-align">Заполните все поля отмеченные * </h4>
         </div>
     </div>
 
@@ -330,73 +349,163 @@
     <section class="delivery_options">
         <div class="container">
             <div class="delivery_options_1">
+                <div class="center-align"> <i class="large  material-icons blue-text">drive_eta</i></div>
+                <h3 class="delivery_options-text center-align">Мы доставимвам заказ в удобное для вас время!</Р>
+                    <div class="row">
 
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="password" type="password" class="validate">
-                                <label for="password">Ваше имя *</label>
+                        <!-- TODO: ========   DELIVERY -->
+                        <!-- section: ...CHANGE USE INFORMATION DELIVERY==========-->
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="delivery_name" type="text" class="validate">
+                                    <label for="delivery_name">Ваше имя *</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Телефон для связи *</label>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="delivery_phone" type="tel" class="validate">
+                                    <label for="delivery_phone">Телефон для связи *</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="emФЫВail">Адрес доставки *</label>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="delivery_adsress" type="text" class="validate">
+                                    <label for="delivery_adsress">Адрес доставки *</label>
+                                </div>
                             </div>
-                        </div>
+                            <!--section_end: ...CHANGE USE INFORMATION DELIVERY=========-->
 
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <select>
-                                    <option value="" disabled selected>домофон работает?</option>
-                                    <option value="1">Работает</option>
-                                    <option value="2">Не работает</option>
-                                </select>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <select id="delivery_time">
-                                    <option value="" disabled selected>В какое время доставить *</option>
-                                    <option value="1">На текущее время</option>
-                                    <option value="2">На определенное время</option>
-                                </select>
+                            <!-- TODO: ========   DOMOFON-->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select id="domofon">
+                                        <option value="" disabled selected>домофон работает?</option>
+                                        <option value="1">Работает</option>
+                                        <option value="2">Не работает</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row delivery_time_choose">
-                            <div class="col s12">
-                                <input id="time" type="text" class="datepicker" value="Выберете дату доставки *">
+                            <!-- TODO: ========   DELIVERY BOY SHOULD TO CALL-->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select id="should-call">
+                                        <option value="" disabled selected>курьеру позвонить по прибытию?</option>
+                                        <option value="1">Позвонить</option>
+                                        <option value="2">нет необходимости звонить</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col s12">
-                                <input type="text" class="timepicker" value="Выберете время доставки *">
+
+                            <!-- TODO: ========   FORM PAY-->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select id="form-pay">
+                                        <option value="" disabled selected>Форма расчета *</option>
+                                        <option value="1">Наличными</option>
+                                        <option value="2">Безналичный расчет по карте</option>
+                                        <option value="3">Переводом - сбербанк онлайн</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="emailww" type="email" class="validate">
-                                <label for="dfg">Комментарий</label>
+
+                            <!-- TODO: ========   TIP-->
+                            <div class="row form-pay_choose">
+                                <div class="input-field col s12">
+                                    <select id="sdacha-option">
+                                        <option value="" disabled selected>Нужна сдача?</option>
+                                        <option value="1">без сдачи</option>
+                                        <option value="3">Сдача с 5000</option>
+                                        <option value="3">Сдача с определенной купюры</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
+
+                            <!-- TODO: ======== DEFINE SUM OF TIP -->
+                            <div class="row sdasha-input">
+                                <div class="input-field col s12">
+                                    <input id="sdasha-input-text" type="text" class="validate">
+                                    <label for="sdasha-input-text">Введите с какой купюры нужна сдача</label>
+                                </div>
+                            </div>
+
+
+                            <!-- section: ...GET TIME DELIVERY==========-->
+                            <!-- TODO: ======== GET TIME DELIVERY -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select id="delivery_time">
+                                        <option value="" disabled selected>В какое время доставить *</option>
+                                        <option value="1">На текущее время</option>
+                                        <option value="2">На определенное время</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row delivery_time_choose">
+                                <div class="col s12">
+                                    <input id="delivery_time_choose-date" type="text" class="datepicker"
+                                        value="Выберете дату доставки *">
+                                </div>
+                                <div class="col s12">
+                                    <input id="delivery_time_choose-clock" type="text" class="timepicker"
+                                        value="Выберете время доставки *">
+                                </div>
+                            </div>
+                            <!--section_end: ...GET TIME DELIVERY=========-->
+
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="delivery_comment" type="text" class="validate">
+                                    <label for="delivery_comment">Комментарий</label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
             </div>
             <div class="delivery_options_2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugiat consectetur ad perspiciatis
-                    perferendis officia ipsam ratione accusamus asperiores aut quibusdam libero, minima est, doloribus
-                    iusto
-                    quas? Enim tenetur, sequi repellat, omnis ea soluta numquam adipisci officia consequuntur provident
-                    sed
-                    architecto cumque corporis aperiam ipsum. Consequatur, accusamus. Assumenda, placeat cumque.</p>
+                <div class="center-align">
+                    <i class="large  material-icons green-text">assignment_turned_in</i>
+                </div>
+
+                <!-- TODO: ========   YOURSELF -->
+                <!-- section: ...CHANGE USE INFORMATION YOURSELF==========-->
+                <h3 class="delivery_options-text center-align">Вы сами можете забрать свой заказ в удобное для вас
+                    время!</Р>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="sam_name" type="text" class="validate">
+                            <label for="sam_name">Ваше имя *</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="sam_phone" type="tel" class="validate">
+                            <label for="sam_phone">Телефон для связи *</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="sam_comment" type="text" class="validate">
+                            <label for="sam_comment">Комментарий</label>
+                        </div>
+                    </div>
+
+                    <!--section_end: ...CHANGE USE INFORMATION DELIVERY=========-->
+
             </div>
+
+            <div class="row center-align">
+                <button class=" button-send  waves-effect waves-light btn-large blue" style="margin: 25px 0;">Отправить
+                    заявку
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+
         </div>
     </section>
 
